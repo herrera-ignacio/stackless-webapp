@@ -1,0 +1,31 @@
+{
+  "name": "stackless",
+  "version": "1.0.0",
+  "private": true,
+  "description": "stackless",
+  "author": "Ignacio Herrera",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "gatsby": "^5.4.2",
+    "module-alias": "^2.2.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "gatsby-plugin-tsconfig-paths": "^1.0.6",
+    "typescript": "^4.9.4"
+  }
+}
