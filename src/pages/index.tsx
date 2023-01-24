@@ -1,15 +1,14 @@
-import * as React from "react"
-import { HeadBase } from "@components/HeadBase";
-import type { HeadFC, PageProps } from "gatsby"
+import * as React from 'react';
+import type { HeadFC, PageProps } from 'gatsby';
+import HeadBase from '@components/HeadBase';
+import Layout from '@components/Layout';
 
-const IndexPage: React.FC<PageProps> = () => {
-  return (
-    <main>
-      Stackless
-    </main>
-  )
-}
+const IndexPage: React.FC<PageProps> = () => (
+  <Layout>
+    <p>Stackless</p>
+  </Layout>
+);
 
-export default IndexPage
+export default IndexPage;
 
-export const Head: HeadFC = HeadBase("Stackless");
+export const Head: HeadFC = HeadBase('Stackless');
