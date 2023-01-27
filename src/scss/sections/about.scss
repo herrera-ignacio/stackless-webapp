@@ -1,0 +1,58 @@
+section#about {
+  overflow: hidden;
+  background-color: #000;
+
+  .tsparticles {   // This is the id of the div created by the Particles component
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+  }
+
+  #content {
+    padding: 250px 0px 100px 0px;
+
+    @media (min-width: 600px) and (max-width: 768px) {
+      padding: 300px 0px 100px 0px;
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+      padding: 350px 0px 100px 0px;
+    }
+
+    @media (min-width: 1025px) and (max-width: 1399px) {
+      padding: 400px 0px 100px 0px;
+    }
+
+    @media (max-width: 599px) {
+      padding: 50px 50px;
+    }
+
+    h1 {
+      font-size: 100px;
+      line-height: 90px;
+      font-family: Teko;
+      color: #fff;
+      text-transform: uppercase;
+
+      @media (min-width:768px) and (max-width:1399px) {
+        font-size: 70px;
+        line-height: 70px;
+      }
+
+      @media (max-width:767px) {
+        font-size: 30px;
+        line-height: 30px;
+        text-align: center;
+      }
+    }
+  
+    .row:nth-of-type(1) {
+      div[class^="col"]:nth-of-type(1) {
+        display: flex;
+        align-items: center;
+      }
+    } 
+  }
+}

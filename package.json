@@ -19,15 +19,23 @@
   "dependencies": {
     "gatsby": "^5.4.2",
     "gatsby-plugin-sass": "^6.4.0",
+    "i": "^0.3.7",
     "module-alias": "^2.2.2",
+    "npm": "^9.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sass": "^1.57.1"
+    "react-tsparticles": "^2.8.0",
+    "sass": "^1.57.1",
+    "scroll-to-element": "^2.0.3",
+    "tsparticles": "^2.8.0",
+    "bootstrap": "^5.2.3",
+    "react-bootstrap": "^2.7.0"
   },
   "devDependencies": {
     "@types/node": "^18.11.18",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
+    "@types/scroll-to-element": "^2.0.2",
     "@typescript-eslint/eslint-plugin": "^5.49.0",
     "eslint": "^8.32.0",
     "eslint-config-airbnb": "^19.0.4",
