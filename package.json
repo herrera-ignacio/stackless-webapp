@@ -17,19 +17,21 @@
     "lint": "eslint --fix -c .eslintrc.cjs ."
   },
   "dependencies": {
+    "@heroicons/react": "^2.0.14",
+    "bootstrap": "^5.2.3",
     "gatsby": "^5.4.2",
     "gatsby-plugin-sass": "^6.4.0",
     "i": "^0.3.7",
     "module-alias": "^2.2.2",
     "npm": "^9.4.0",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.7.0",
     "react-dom": "^18.2.0",
     "react-tsparticles": "^2.8.0",
     "sass": "^1.57.1",
     "scroll-to-element": "^2.0.3",
     "tsparticles": "^2.8.0",
-    "bootstrap": "^5.2.3",
-    "react-bootstrap": "^2.7.0"
+    "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {
     "@types/node": "^18.11.18",

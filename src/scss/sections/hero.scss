@@ -1,0 +1,160 @@
+section#hero {
+  position: relative;
+  background-image: url('/img/b4.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 767px) {
+    height: 350px;
+  }
+
+  h1 {
+    font-size: 80px;
+    font-family: Teko;
+    line-height: 40px;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    
+    @media (max-width: 767px) {
+      font-size: 20px;
+      line-height: 20px;
+      margin-left: 2px;
+    }
+    @media (min-width: 768px) {
+      margin-left: 4px;
+    }
+    @media (min-width: 768px) and (max-width: 1500px) {
+      font-size: 40px;
+    }
+  }
+
+  h2 {
+    font-size: 120px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(left, #00ffff , #007a7a);
+    background: -o-linear-gradient(right, #00ffff, #007a7a);
+    background: -moz-linear-gradient(right, #00ffff, #007a7a);
+    background: linear-gradient(to right, #00ffff , #007a7a); 
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @media (max-width:767px) {
+      font-size: 40px;
+      line-height: 40px;
+    }
+    @media (min-width:768px) and (max-width:1500px) {
+          font-size: 70px;
+    }
+  }
+
+  div#content {
+    position: relative;
+
+    div#separator {
+      height: 5px;
+      width: 50px;
+      background-color: #04e5e5;
+      margin-bottom: 30px;
+
+      @media (max-width:767px) {
+        margin-left: 2px;
+      }
+      @media (min-width:768px) {
+          margin-left: 6px;
+      }
+    }
+
+    div#typing {
+      font-size: 50px;
+      line-height: 50px;
+      color: #fff;
+
+      @media (max-width:767px) {
+        font-size: 20px;
+        line-height: 20px;
+        margin-left: 2px;
+      }
+      @media (min-width:768px) {
+          margin-left: 6px;
+      }
+      @media (min-width:768px) and (max-width:1500px) {
+          font-size: 23px;
+          line-height: 20px;
+      }
+    }
+  }
+
+  div#services {
+    position: absolute;
+    width: 100%;
+    bottom: -14%;
+    z-index: 2;
+
+    @media(max-width: 767px) {
+      position: relative;
+      bottom: 0px;
+    }
+
+    @media(min-width: 768px) and (max-width: 1023px) {
+      bottom: -25%;
+    }
+
+    @media (min-width: 1024px) and (max-width: 1400px) {
+      bottom: -35%;
+    }
+
+    div[class^="service"][class*=' col-'] {
+      padding: 0;
+      border-right: 1px solid #444;
+      &.no-border {
+        border-right: none;
+      }
+
+      @media (max-width: 500px) {
+        border-right: none;
+      }
+
+      div.service-content {
+        height: 300px;
+        padding: 40px;
+        background-color: #111;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        transition: .2s;
+        &:hover {
+          background-color: #222;
+        }
+
+        div.service-icon {
+          margin-bottom: 20px;
+          svg {
+            max-height: 70px;
+          }
+        }
+
+        h3.service-heading {
+          font-size: 30px;
+          font-weight: 400;
+          font-family: Teko;
+        }
+
+        p.service-description {
+          font-size: 14px;
+          font-weight: 300;
+          color: #c5c5c5;
+        }
+      }
+    }
+  }
+}
