@@ -41,8 +41,8 @@ const Counter: React.FC<CounterProps> = ({ value, symbol, delay, duration, descr
         <CountUp className='value' start={0} end={start ? value : 0} duration={duration} />
         <span className='symbol'>{symbol}</span>
       </div>
-      <div id='description'>
-        <span>{description}</span>
+      <div>
+        <span className='description'>{description}</span>
       </div>
     </div>
   )

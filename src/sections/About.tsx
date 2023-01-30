@@ -9,11 +9,11 @@ const AboutSection = () => (
     <Particles />
     <Container id='content'>
       <Row>
-        <Col md={6}>
+        <Col id="slogan" md={6}>
           <h1>
             The right<br/><span className='colored'>tech stack</span><br/>
             for your <span className='colored'>solution</span>
-           </h1>.
+           </h1>
         </Col>
         <Col md={6}>
           <Row>

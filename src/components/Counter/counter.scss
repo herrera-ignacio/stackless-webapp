@@ -56,6 +56,11 @@ div#counter {
     font-size: 120px;
     line-height: 90px;
     font-family: Teko;
+
+    @media (max-width:767px) {
+      font-size: 80px;
+      line-height: 20px;
+    }
   }
 
   span.symbol {
@@ -66,12 +71,14 @@ div#counter {
     @include animation('counter');
     animation-duration: 5s;
     animation-direction: alternate;
+
+    @media (max-width:767px) {
+      font-size: 25px;
+      line-height: 20px;
+    }
   }
 
-  div#description {
-    display: flex;
-    span {
-      font-size: 20px;
-    }
+  div > span.description {
+    font-size: 20px;
   }
 }
