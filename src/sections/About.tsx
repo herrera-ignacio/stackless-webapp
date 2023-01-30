@@ -12,7 +12,7 @@ const AboutSection = () => (
         <Col id="slogan" md={6}>
           <h1>
             The right<br/><span className='colored'>tech stack</span><br/>
-            for your <span className='colored'>solution</span>
+            for your<br/><span className='colored'>solution</span>
            </h1>
         </Col>
         <Col md={6}>

@@ -11,67 +11,70 @@ section#about {
   }
 
   div#content {
-    padding: 250px 0 50px 100px;
+    padding: 400px 0 50px 0px;
 
-    @media (max-width: 599px) {
-      padding: 50px;
-    }
-
-    @media (min-width: 600px) and (max-width: 768px) {
-      padding: 300px 0px 100px 0px;
+    @media (max-width: 768px) {
+      padding: 100px;
     }
 
     @media (min-width: 769px) and (max-width: 1024px) {
-      padding: 350px 0px 100px 0px;
+      padding: 250px 0px 100px 0px;
     }
 
     @media (min-width: 1025px) and (max-width: 1399px) {
-      padding: 400px 0px 100px 0px;
+      padding: 300 0px 50px 0px;
     }
 
-
-    h1 {
-      font-size: 100px;
-      line-height: 90px;
-      font-family: Teko;
-      color: #fff;
-      text-transform: uppercase;
-
-      @media (min-width:768px) and (max-width:1399px) {
-        font-size: 70px;
-        line-height: 70px;
-      }
-
-      @media (max-width:767px) {
-        font-size: 40px;
-        line-height: 40px;
-        text-align: center;
-      }
-    }
-
-    span.colored {
-      color: #04e5e5;
-      font-size: 120px;
-      line-height: 100px;
-      font-family: Teko;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-
-      @media (max-width: 767px) {
-        font-size: 40px;
-        line-height: 40px;
-      }
-      @media (min-width: 768px) and (max-width:1399px) {
-        font-size: 80px;
-        lien-height: 80px;
-      }
-    }
-  
     .row:first-child {
       div#slogan {
         display: flex;
-        align-items: center;
         justify-content: center;
+
+        @media (max-width: 767px) {
+          margin-bottom: 20px;
+        }
+
+        @media (min-width: 768px) and (max-width: 1024px) {
+          padding-top: 40px;
+        }
+
+        h1 {
+          font-size: 100px;
+          line-height: 90px;
+          font-family: Teko;
+          color: #fff;
+          text-transform: uppercase;
+    
+          @media (max-width: 767px) {
+            font-size: 30px;
+            line-height: 30px;
+            text-align: center;
+          }
+    
+          @media (min-width: 768px) and (max-width: 1024px) {
+            font-size: 70px;
+            line-height: 70px;
+          }
+    
+        }
+    
+        span.colored {
+          color: #04e5e5;
+          font-size: 120px;
+          line-height: 90px;
+          font-family: Teko;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+    
+          @media (max-width: 767px) {
+            font-size: 40px;
+            line-height: 40px;
+          }
+          @media (min-width: 768px) and (max-width: 1024px) {
+            font-size: 90px;
+            line-height: 70px;
+          }
+        }
       }
     } 
   }

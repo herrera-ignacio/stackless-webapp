@@ -9,8 +9,7 @@ This is powered by Gatsby React. I expect making this white-label by using Gatsb
 
 ## To-Do
 
-1. Add content to About section
-2. Service section
+2. Services Hero, align stuff
 3. Team section
 4. Add footer with companies I've worked with
 5. Add footer with contact information
