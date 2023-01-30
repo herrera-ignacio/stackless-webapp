@@ -1,0 +1,77 @@
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }  
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }  
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};      
+}
+
+@include keyframes(counter) {
+  0%  {color: #04e5e5;}
+  10% {color: #f37055;}
+  20% {color: #ef4e7b;}
+  30% {color: #a166ab;}
+  40% {color: #5073b8;}
+  50% {color: #04e5e5;}
+  60% {color: #07b39b;}
+  70% {color: #6fba82;}
+  80% {color: #5073b8;}
+  90% {color: #1098ad;}
+  100% {color: #f37055;}
+}
+
+div#counter {
+  height: auto;
+  margin: 10px 0 100px 0;
+  position: relative;
+
+  @media(max-width: 767px) {
+    margin: 50px 0;
+    text-align: center;
+  }
+
+  span {
+    color: #fff;
+  }
+
+  span.value {
+    font-size: 120px;
+    line-height: 90px;
+    font-family: Teko;
+  }
+
+  span.symbol {
+    color: #04e5e5;
+    position: absolute;
+    font-size: 39px;
+    top: -20px;
+    @include animation('counter');
+    animation-duration: 5s;
+    animation-direction: alternate;
+  }
+
+  div#description {
+    display: flex;
+    span {
+      font-size: 20px;
+    }
+  }
+}
