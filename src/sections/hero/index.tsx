@@ -2,6 +2,7 @@ import React from 'react';
 import { Row, Col, Container } from 'react-bootstrap';
 import Typewriter from 'typewriter-effect';
 import { CodeBracketIcon, DevicePhoneMobileIcon, RocketLaunchIcon } from '@heroicons/react/24/solid'
+import './hero.scss';
 
 const HeroSection = () => (
   <section id="hero">

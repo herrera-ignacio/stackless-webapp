@@ -2,9 +2,9 @@ import * as React from 'react';
 import type { HeadFC, PageProps } from 'gatsby';
 import HeadBase from '@components/HeadBase';
 import Layout from '@components/Layout';
-import HeroSection from 'sections/Hero';
-import AboutSection from 'sections/About';
-import ServicesSection from 'sections/Services';
+import HeroSection from 'sections/hero';
+import AboutSection from 'sections/about';
+import ServicesSection from 'sections/services';
 import TestimonialsSection from 'sections/Testimonials';
 
 const IndexPage: React.FC<PageProps> = () => (

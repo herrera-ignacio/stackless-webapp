@@ -1,0 +1,43 @@
+@import '../../scss/mixins';
+
+@include keyframes(heading) {
+  0% { opacity: 0; }
+  100% {
+    transform: translate(0,0);
+    opacity: 1;
+  }
+}
+
+h2.with-animation {
+  text-align: center;
+  margin-bottom: 20px;
+
+  span {
+    color: #fff;
+  }
+  
+  span.heading {
+    transform: translate(0, -100px);
+    display: inline-block;
+    transition: 1s;
+    opacity: 0;
+    font-size: 100px;
+    line-height: 90px;
+    font-family: Teko;
+    text-transform: uppercase;
+    @media (max-width: 767px) {
+        font-size: 40px;
+        line-height: 40px;
+    }
+  }
+
+  span.with-animation {
+    @include animation('heading');
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+
+  span.colored {
+    color: #04e5e5
+  }
+}

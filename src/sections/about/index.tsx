@@ -3,6 +3,7 @@ import { Container, Col, Row } from 'react-bootstrap';
 import Particles from '@components/Particles';
 import Counter from '@components/Counter';
 import Animation from '@components/Animation';
+import './about.scss';
 
 const AboutSection = () => (
   <section id='about'>
