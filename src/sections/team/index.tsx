@@ -29,13 +29,13 @@ const settings = {
       }
     },
     {
-      breakpoint: 600,
+      breakpoint: 768,
       settings: {
         slidesToShow: 3< teamData.length ? 3 : teamData.length 
       }
     },
     {
-      breakpoint: 480,
+      breakpoint: 767,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1

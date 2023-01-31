@@ -9,8 +9,14 @@ This is powered by Gatsby React. I expect making this white-label by using Gatsb
 
 ## To-Do
 
-2. Services Hero, align stuff
-3. Team section
-4. Add footer with companies I've worked with
-5. Add footer with contact information
-6. Add form to send email?
+- Update services content
+- Add baffle effect
+- Email breaking responsive
+- Contact breaking mobile version
+- Slick dots need to be white
+- Add LinkedIn for Stackless
+- Get domain and email
+- Add cellphone number
+- Deployment
+- Change main color?
+- Add form to send email?

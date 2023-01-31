@@ -13,7 +13,7 @@ const ContactSection = () => {
       <Container>
       <HeaderWithAnimation text="Contact" />   
         <Row className='links-row'>
-          <Col className='link-col' md={4}>
+          <Col className='link-col mb-5' md={4} >
             <Animation animation='fadeIn' delay={500}>
               <div className='info-box'>
                 <div className='icon-container'>
@@ -22,13 +22,13 @@ const ContactSection = () => {
                 <div className='info-text'>
                   <h4>Email</h4>
                   <div className='link-box'>
-                    <a href='mailto:ignacioromanherrera@gmail.com'>ignacioromanherrera@gmail.com</a>
+                    <a href='mailto:ignacioromanherrera@gmail.com'>Send a message</a>
                   </div>
                 </div>
               </div>
             </Animation>
           </Col>
-          <Col className='link-col' md={4}>
+          <Col className='link-col mb-5' md={4}>
             <Animation animation='fadeIn' delay={1000}>
               <div className='info-box'>
                 <div className='icon-container'>
@@ -43,7 +43,7 @@ const ContactSection = () => {
               </div>
             </Animation>
           </Col>
-          <Col className='link-col' md={4}>
+          <Col className='link-col mb-5' md={4}>
             <Animation animation='fadeIn' delay={1500}>
               <div className='info-box'>
                 <div className='icon-container'>

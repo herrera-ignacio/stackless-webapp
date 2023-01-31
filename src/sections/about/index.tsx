@@ -20,7 +20,7 @@ const AboutSection = () => (
           <Row>
             <Col md={6}>
               <Animation animation='fadeInLeft'>
-                <Counter value={8} duration={5}  symbol="+" description="Years of experience" />
+                <Counter value={8} duration={5}  symbol="+" description="Years" />
               </Animation>
             </Col>
             <Col md={6}>
@@ -30,7 +30,7 @@ const AboutSection = () => (
             </Col>
             <Col md={6}>
               <Animation animation='fadeInRight'>
-                <Counter value={15} duration={5} symbol="+" description="Projects kick-started" />
+                <Counter value={15} duration={5} symbol="+" description="Projects" />
               </Animation>
             </Col>
             <Col md={6}>
