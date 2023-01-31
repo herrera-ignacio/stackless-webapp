@@ -10,14 +10,13 @@ const HeaderWithAnimation: React.FC<HeaderWithAnimationProps> = ({ text }) => {
   const [start, setStart] = useState(false);
   const ref = useRef(null);
   const { inViewport } = useInViewport(ref);
-  const delay = text.length * 200 + 500;
 
   useEffect(() => {
     if (inViewport && !start) {
       // setIsVisible(inViewport);
       const timeout = setTimeout(() => {
         setStart(true);
-      }, delay);
+      }, 1000);
 
       return () => clearTimeout(timeout);
     }

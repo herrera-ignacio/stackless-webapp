@@ -1,0 +1,49 @@
+div.team-mobile {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background-image: linear-gradient(to top, rgba(4,229,229,1), rgba(255, 255, 255, 0));
+  opacity: 0 !important;
+  transition: .5s;
+  display: flex;
+  align-items: flex-end;
+  visibility: visible;
+
+  // We have a desktop component that will be rendered
+  @media (min-width:1025px) {
+      display: none !important;
+  }
+
+  div.info {
+    transform: translateY(50px);
+    transition: .5s;
+    width: 100%;
+    text-align: center;
+
+    h4 {
+      color: #fff;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 10px;
+    }
+
+    h5 {
+      line-height: 10px;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+
+    div.social {
+      line-height: 5px;
+      svg {
+        height: 25px;
+        cursor: pointer;
+        color: #fff;
+        margin: 0 5px;
+      }
+    }
+  }
+}

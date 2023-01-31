@@ -5,14 +5,14 @@ import Layout from '@components/Layout';
 import HeroSection from 'sections/hero';
 import AboutSection from 'sections/about';
 import ServicesSection from 'sections/services';
-import TestimonialsSection from 'sections/Testimonials';
+import TeamSection from 'sections/team';
 
 const IndexPage: React.FC<PageProps> = () => (
   <Layout>
     <HeroSection />
     <AboutSection />
     <ServicesSection />
-    <TestimonialsSection />
+    <TeamSection />
   </Layout>
 );
 
