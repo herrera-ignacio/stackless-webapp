@@ -47,7 +47,7 @@ const settings = {
 const TeamSection = () => {
   return (
     <section id='team'>
-      <Particles />
+      <Particles id='team-particles' />
       <Container className='team-header'>
         <Col md={12}>
           <HeaderWithAnimation text="Team Members" />

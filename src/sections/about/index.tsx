@@ -7,7 +7,7 @@ import './about.scss';
 
 const AboutSection = () => (
   <section id='about'>
-    <Particles />
+    <Particles id='about-particles' />
     <Container id='content'>
       <Row>
         <Col id="slogan" md={6}>
