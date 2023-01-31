@@ -10,8 +10,9 @@ div.team-item {
   @media (max-width:1024px) {
     height: 300px;
   }
-  @media (max-width: 767px) {
-    max-width: 85%;
+
+  @media (max-width: 500px) {
+    min-width: 100%;
   }
 
   &:hover {

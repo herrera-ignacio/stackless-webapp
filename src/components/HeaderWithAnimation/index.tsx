@@ -4,9 +4,10 @@ import './headerWithAnimation.scss';
 
 interface HeaderWithAnimationProps {
   text: string;
+  highlightIdx?: number;
 }
 
-const HeaderWithAnimation: React.FC<HeaderWithAnimationProps> = ({ text }) => {
+const HeaderWithAnimation: React.FC<HeaderWithAnimationProps> = ({ text, highlightIdx = 0 }) => {
   const [start, setStart] = useState(false);
   const ref = useRef(null);
   const { inViewport } = useInViewport(ref);
@@ -24,22 +25,31 @@ const HeaderWithAnimation: React.FC<HeaderWithAnimationProps> = ({ text }) => {
 
   const getText = () => {
     let time = 0;
+    const words = text.split('');
     return text.split(" ")
       .map((sentence, sentenceIdx) => sentence.split("")
       .map((char, i) => {
       ++time;
       return (
-        <span
-          className={`heading ${start && `with-animation`} ${sentenceIdx % 2 !== 0 && 'colored'}`}
-          key={char + time}
-          style={{ animationDelay: `${time*100}ms` }}
-        >
-          {char}
+        <>
+          <span
+            className={`
+              heading
+              ${start && ` with-animation`}
+              ${sentenceIdx % 2 !== 0 && ' colored'}
+              ${highlightIdx === sentenceIdx && ' highlight-mobile'}
+            `}
+            key={char + time}
+            style={{ animationDelay: `${time*100}ms` }}
+          >
+            {char}
+
+          </span>
           {/* If last char, leave space for next word */}
           {i + 1 === sentence.length && (
-            <span style={{ 'marginLeft': '0.5rem' }} />
+            <span className='spacing' />
           )}
-        </span>
+        </>
       );
     }));
   }

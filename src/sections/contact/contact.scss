@@ -3,13 +3,18 @@ section#contact {
   background-color: #111;
   padding: 75px 0;
 
+  @media (max-width: 767px) {
+    padding: 35px 0;
+  }
+
   div.links-row {
-    margin-top: 150px;
+    margin-top: 120px;
+
+    @media (max-width: 767px) {
+      margin-top: 100px;
+    }
     
     div.link-col {
-      @media (max-width: 500px) {
-          margin-botton: 140px;
-      }
 
       div.info-box {
         background-color: #111;

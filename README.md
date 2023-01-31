@@ -9,10 +9,7 @@ This is powered by Gatsby React. I expect making this white-label by using Gatsb
 
 ## To-Do
 
-- Update services content
 - Add baffle effect
-- Email breaking responsive
-- Contact breaking mobile version
 - Slick dots need to be white
 - Add LinkedIn for Stackless
 - Get domain and email
