@@ -1,0 +1,71 @@
+section#contact {
+  background-color: #111;
+  padding: 75px 0;
+
+  div.links-row {
+    margin-top: 150px;
+    
+    div.link-col {
+      @media (max-width: 500px) {
+        margin-botton: 140px;
+      }
+
+      div.info-box {
+        height: 225px;
+        background-color: #111;
+        border: 2px solid #444;
+        &:hover {
+          div.icon-container {
+            background-color: #009e9e;
+          }
+        }
+
+        div.icon-container {
+          width: 150px;
+          height: 150px;
+          margin: auto;
+          padding: 35px;
+          text-align: center;
+          position: relative;
+          bottom: 75px;
+          background-color: #04e5e5;
+          border-radius: 150px;
+          transition: .5s;
+
+          svg {
+            height: 80px;
+          }
+        }
+
+        div.info-text {
+          position: relative;
+          bottom: 35px;
+
+          h4 {
+            font-size: 35px;
+            line-height: 15px;
+            color: #fff;
+            font-family: Teko;
+            text-align: center;
+          }
+
+          div.link-box {
+            line-height: 15px;
+            text-align: center;
+
+            a {
+              font-size: 14px;
+              text-decoration: none;
+              color: #04e5e5;
+              transition: .5s;
+              &:hover {
+                color: #fff;
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

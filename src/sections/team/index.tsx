@@ -4,6 +4,7 @@ import { Col, Container } from 'react-bootstrap';
 import Slider from 'react-slick';
 import Animation from '@components/Animation';
 import TeamItem from '@components/TeamItem';
+import Particles from '@components/Particles';
 import teamData from './team';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -46,6 +47,7 @@ const settings = {
 const TeamSection = () => {
   return (
     <section id='team'>
+      <Particles />
       <Container className='team-header'>
         <Col md={12}>
           <HeaderWithAnimation text="Team Members" />

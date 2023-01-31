@@ -4,19 +4,15 @@ import { Particles as TsParticles } from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
 
 const Particles = () => {
-  const particlesInit = useCallback(async (engine: Engine) => {
+  const particlesInit = async (engine: Engine) => {
     await loadFull(engine);
-  }, []);
+  };
 
-  const particlesLoaded = useCallback(async (container: Container | undefined) => {
-    return;
-  }, []);
 
   return (
     <TsParticles
       className='tsparticles'
       init={particlesInit}
-      loaded={particlesLoaded}
       options={{
         "fullScreen": { enable: false, zIndex: 0 },
         "particles": {
