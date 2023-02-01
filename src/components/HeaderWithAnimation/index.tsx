@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef, useState, useEffect, Fragment } from 'react';
 import { useInViewport } from 'react-in-viewport';
 import './headerWithAnimation.scss';
 
@@ -31,7 +31,7 @@ const HeaderWithAnimation: React.FC<HeaderWithAnimationProps> = ({ text, highlig
       .map((char, i) => {
       ++time;
       return (
-        <>
+        <Fragment key={char + time}>
           <span
             className={`
               heading
@@ -39,7 +39,7 @@ const HeaderWithAnimation: React.FC<HeaderWithAnimationProps> = ({ text, highlig
               ${sentenceIdx % 2 !== 0 && ' colored'}
               ${highlightIdx === sentenceIdx && ' highlight-mobile'}
             `}
-            key={char + time}
+            
             style={{ animationDelay: `${time*100}ms` }}
           >
             {char}
@@ -49,7 +49,7 @@ const HeaderWithAnimation: React.FC<HeaderWithAnimationProps> = ({ text, highlig
           {i + 1 === sentence.length && (
             <span className='spacing' />
           )}
-        </>
+        </Fragment>
       );
     }));
   }

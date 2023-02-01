@@ -7,16 +7,20 @@ import AboutSection from 'sections/about';
 import ServicesSection from 'sections/services';
 import TeamSection from 'sections/team';
 import ContactSection from 'sections/contact';
+import PageRevealer from '@components/PageRevealer';
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
-    <Layout>
-      <HeroSection />
-      <AboutSection />
-      <ServicesSection />
-      <TeamSection />
-      <ContactSection />
-    </Layout>
+    <>
+      <PageRevealer />
+      <Layout>
+        <HeroSection />
+        <AboutSection />
+        <ServicesSection />
+        <TeamSection />
+        <ContactSection />
+      </Layout>
+    </>
   )
 };
 
