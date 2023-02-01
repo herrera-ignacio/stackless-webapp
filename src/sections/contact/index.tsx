@@ -22,7 +22,7 @@ const ContactSection = () => {
                 <div className='info-text'>
                   <h4>Email</h4>
                   <div className='link-box'>
-                    <a href='mailto:ignacioromanherrera@gmail.com'>Send a message</a>
+                    <a href='mailto:info@stackless.tech'>info@stackless.tech</a>
                   </div>
                 </div>
               </div>
@@ -37,7 +37,7 @@ const ContactSection = () => {
                 <div className='info-text'>
                   <h4>Telephone</h4>
                   <div className='link-box'>
-                    <a href='tel:(123)123-1234'>(123) 456-6789</a>
+                    <a href='tel:(+54911) 6270-1204'>(+54911) 6270-1204</a>
                   </div>
                 </div>
               </div>
@@ -52,7 +52,7 @@ const ContactSection = () => {
                 <div className='info-text'>
                   <h4>LinkedIn</h4>
                   <div className='link-box'>
-                    <a target='_blank' href='https://www.linkedin.com/in/ignacioromanherrera/'>
+                    <a target='_blank' href='https://www.linkedin.com/company/stacklessllc/'>
                       Stackless LLC
                     </a>
                   </div>
