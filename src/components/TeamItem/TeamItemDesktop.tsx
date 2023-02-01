@@ -1,11 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import baffle from 'baffle';
 import { TeamItemProps } from '.';
 import './TeamItemDesktop.scss';
 
 const TeamItemDesktop: React.FC<TeamItemProps> = ({ member }) => {
   const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    const target = baffle('h4.obfuscated')
+    target.set({
+      characters: "█1010101010",
+      speed: 50
+    });
+    target.start();
+    target.reveal(1000, 100);
+  });
 
   return (
     <div
@@ -15,7 +26,7 @@ const TeamItemDesktop: React.FC<TeamItemProps> = ({ member }) => {
     >
       {show && (
         <>
-          <h4>
+          <h4 className='obfuscated'>
             {member.name}
           </h4>
           <h5>

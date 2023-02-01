@@ -37,7 +37,7 @@ const ContactSection = () => {
                 <div className='info-text'>
                   <h4>Telephone</h4>
                   <div className='link-box'>
-                    <a href='tel:(+54911) 6270-1204'>(+54911) 6270-1204</a>
+                    <a href='tel:(415) 548-7105'>(415) 548-7105</a>
                   </div>
                 </div>
               </div>

@@ -3,7 +3,7 @@ import { TeamMember } from "@components/TeamItem";
 const members: TeamMember[] = [
   {
     id: '1',
-    image: '/img/team/1.jpg',
+    image: '/img/team/1.png',
     name: 'Ignacio Herrera',
     role: 'CEO/CTO',
     linkedin: 'https://www.linkedin.com/in/ignacioromanherrera/',
@@ -11,10 +11,11 @@ const members: TeamMember[] = [
   },
   {
     id: '2',
-    image: '/img/team/2.jpg',
+    image: '/img/team/2.png',
     name: 'Giggi Argento',
     role: 'CDO',
-    linkedin: 'https://www.linkedin.com/in/giggiargento/'
+    linkedin: 'https://www.linkedin.com/in/giggiargento/',
+    github: 'https://github.com/giggiargento/'
   }
 ]
 
