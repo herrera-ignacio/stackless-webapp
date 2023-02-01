@@ -17,8 +17,8 @@ const HeroSection = () => (
               strings: [
                 'Developers',
                 'UI/UX',
-                'DevOps',
-                'SecOps'
+                'DevSecOps',
+                'Machine Learning & IA'
               ],
               autoStart: true,
               loop: true,
