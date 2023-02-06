@@ -3,7 +3,7 @@ import type { GatsbyConfig } from 'gatsby';
 const config: GatsbyConfig = {
   siteMetadata: {
     title: 'Stackless',
-    siteUrl: 'https://www.yourdomain.tld',
+    siteUrl: 'https://stackless.tech',
   },
   graphqlTypegen: true,
   plugins: [

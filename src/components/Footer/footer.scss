@@ -1,0 +1,38 @@
+div#footer-container {
+  background-color: #000;
+  color: #555;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+
+
+    div.footer-text {
+      span, a {
+        font-size: 12px;
+        color: #555;
+  
+        transition: 1s;
+        &:hover {
+          color: #04e5e5;
+        }
+      }
+    }
+
+  div#footer-icons {
+    .social-icon:first-child {
+      margin-right: 5px;
+    }
+
+    .social-icon {
+      font-size: 15px;
+      color: #555;
+      cursor: pointer;
+      transition: 1s;
+      &:hover {
+        color: #04e5e5;
+      }
+    }
+  }
+}
